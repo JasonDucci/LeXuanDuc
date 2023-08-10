@@ -1,0 +1,88 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Lê Xuân Đức
+ID: s3975039
+Acknowledgement: Acknowledge the resources that you use here. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunrise Bookstore</title>
+  <link rel="stylesheet" href="homestyles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="https://media.istockphoto.com/id/1197901679/vector/open-book-color-vector-template-icon.jpg?s=612x612&w=0&k=20&c=XdFcmrOHtGYGH7ab4YplsEpPzaLS4WUeeO6Nr6aaols=" alt="Bookstore Logo" class="logo"></a>
+    <h1>Sunrise Bookstore</h1>
+    
+    <ul>
+      <div class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="subcag1.html">Fiction</a></li>
+        <li><a href="subcag2.html">Comics</a></li>
+        <li><a href="#">More Categories</a></li>
+        </div>
+</ul>
+  </header>
+  <body>
+    <main>
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <label for="contact-purpose">Contact Purpose</label>
+        <select id="contact-purpose" name="contact-purpose">
+          <option value="sell">I want to sell books</option>
+          <option value="buy">I want to buy books</option>
+        </select>
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <fieldset>
+          <legend>Contact Preference</legend>
+          <label><input type="checkbox" name="contact-preference[]" value="email"> By email</label>
+          <label><input type="checkbox" name="contact-preference[]" value="phone"> By phone</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Receive Weekly Newsletter</legend>
+          <label><input type="radio" name="newsletter" value="yes" checked> Yes</label>
+          <label><input type="radio" name="newsletter" value="no"> No</label>
+        </fieldset>
+        
+        <label for="extra-notes">Extra Notes</label>
+        <textarea id="extra-notes" name="extra-notes"></textarea>
+        
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </body>
+</main>
+<div class="rich-media">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/-VM7r6L-JAo">
+    </iframe>
+  </div>
+  <footer>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2023 Sunrise Bookstore. All rights reserved.</p>
+        <ul>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  </html>
